@@ -11,7 +11,7 @@ There are three(will be more in the future) language runtimes now: JavaScript, J
 Runtime executes, schedules, statistics and fragments user functions. User can invoke other functions
 over language type. All the runtimes can be automatically divided at right time.
 
-##### jsr
+##### (1) jsr
 'jsr' is a condensed name of JavaScript runtime. In this runtime, we use v8 to make it.
 It is different from NodeJS. NodeJS is a standalone JavaScript language. Jsr is a distribudted
 runtime of JavaScript. In the jsr, we can fragment user function code and execute them on the
@@ -24,7 +24,7 @@ for JavaScript runtime.
 
 For more detail, go to [jsr](https://github.com/toms-less/jsr).
 
-##### jar
+##### (2) jar
 'jar' is a condensed name of Java runtime. In this runtime, we use self-defined classloader
 to hot-reload use functions. In the traditional Java application developing, user should package
 all the code and deploy them to the target machines. This progress often take a long time,
@@ -33,7 +33,7 @@ class files and run them fastly.
 
 For more detail, go to [jar](https://github.com/toms-less/jar).
 
-##### gor
+##### (3) gor
 'gor' is a condensed name of Golang runtime. In this runtime, we use plugin feature of Golang to
 load user functional logic.
 
