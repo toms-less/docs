@@ -4,7 +4,7 @@ care about any configuration of infrastructure and only need focus on user busin
 User can separate business logic from business data to make the business more general.
 In the future, user can make their business to be productions on the toms business market.
 
-Toms is a functional service infrastructure. There are five parts in it as following:
+Toms is a functional service infrastructure. There are six parts in it as following:
 
 #### Language runtime.
 There are three(will be more in the future) language runtimes now: JavaScript, Java and Golang.
@@ -39,6 +39,11 @@ load user functional logic.
 
 For more detail, go to [gor](https://github.com/toms-less/gor).
 
+#### Function trigger
+In this system, it should provide the open services to the outside such as http services or video services. In this architecture, there are some types of service which call the functions in the runtimes such as
+'jsr', 'jar' or 'gor'. Those services are called function triggers. Triggers are connected with the runtimes with protobuf protocol in gRPC. 'httpt' is the http trigger in this system.
+
+For more detail, go to [httpt](https://github.com/toms-less/httpt).
 
 #### Resource manager.
 To make the goal that user need't care about configuration of infrastructure, we will build a schedule system.
